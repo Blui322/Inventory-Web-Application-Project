@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script defer src="./scripts/main.js"></script>
+    <script defer src="./scripts/count.js"></script>
+    <script defer src="./scripts/generateGame.js" ></script>
+</head>
+<body>
+    <header>
+        <H1>Video Game Library <span class="video-game-count">(Game: 1)</span></H1>
+    </header>
+ <main>
+    <section class="new-game-form">
+        <h2>Create a New Game</h2>
+        <form id="New-Game">
+            <label for="name">
+                Game Name* <span class="required"></span>
+                <input id="name" name="name" type="text" required/>
+            </label>
+            <br>
+            <label for="price">
+                Game Price* $ <span class="required"></span>
+                <input id="price" name="price" type="number" required/>
+            </label>
+            <br>
+            <label for="genres">
+                Game Genres* <span class="required"></span>
+                <input id="genres"  name="genres" type="text" required>
+            </label>
+            <br>
+            <label for="consoles">
+                Gamer Consoles* <span class="required"></span>
+                <input id="consoles" name="consoles" type="text" required>
+            </label>
+        
+            <br>
+            <label for="imageUrl">
+                Game Image* <span class="required"></span>
+                <input id="imageUrl"
+                name="imageUrl" type="Url" required>
+             </label>
+            <br>
+            <label for="inStock">
+                In Stock Game* 
+                <select name="inStock" id="inStock">
+                    <option value="In Stock"> In Stock</option>
+                    <option value="Out Of Stock">Out Of Stock</option>
+                </select>
+
+            </label>
+            <br>
+            <button type="submit">Create Game</button>
+            <button type="reset">Reset</button>
+            <br>
+           
+
+        </form>
+    </section>
+    <section class="games">
+        <h2>All Games</h2>
+        <ul>
+         <li class="single-game">
+            <h3>🎮🇩🇴</h3>
+            <p><strong>Name</strong>: Call of Duty</p>
+            <p><strong>Price</strong>: $60</p>
+            <p><strong>Genre</strong>: Mature</p>
+            <p><strong>Consoles</strong>: All consoles</p>
+            <div>
+                <input type="checkbox" id="inStock" name="inStock" checked />
+                <label for="inStock">In Stock</label>
+            </div>
+            <div>
+                <input type="checkbox" id="outStock" name="inStock" />
+                <label for="outStock">Out of Stock</label>
+            </div>
+            
+        
+            <p><strong>Image</strong></p> <img class="Main-image"
+            src="https://www.gameshub.com/wp-content/uploads/sites/5/2021/12/call-of-duty.jpeg" alt="call-of-duty">
+
+            <button>Remove Game</button>
+        </li>
+    </ul>
+
+    </section>
+ </main>
+</body>
+</html>
