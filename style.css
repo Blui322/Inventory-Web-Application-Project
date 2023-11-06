@@ -1,0 +1,140 @@
+html,
+body {
+    color: rgb(2, 36, 36);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.4584427521008403) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "play";
+    margin: 0;
+}
+
+header{
+    background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(25, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    border-bottom: 9px solid greenyellow;
+    color: rgb(227, 212, 220);
+}
+
+
+header h1 {
+    padding: 25px;
+}
+
+header h1 span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin: 10px;
+}
+
+main {
+   
+    margin: 40px;
+    width: 40%;
+     
+     
+}
+
+.new-game-form {
+    border-bottom: 3px solid rgb(236, 227, 228);
+    padding: 25px 0;
+    
+     
+}
+
+.new-game-form h2 {
+    margin: 0px;
+}
+
+
+form input,
+form label,
+form textarea {
+    box-sizing: border-box;
+    display: block;
+    margin: 5px ;
+    width: 100%;
+     
+}
+
+form input,
+form textarea{
+    border: 1px solid rgb(11, 23, 16);
+    padding: 8px;
+}
+
+form button[type="submit"],
+button {
+background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(25, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    border: none;
+    border-radius: 5px;
+    color: aqua;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+form button[type="submit"]:hover,
+button:hover {
+    
+        background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(25, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+
+
+
+.games h2{
+    margin: 25px 0 0;
+    
+}
+
+.games ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    
+}
+
+.games ul li {
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    padding: 10px; 
+    text-align: center;
+    
+}
+
+.game-count{
+    padding-left: 10px;
+}
+
+.Main-image{
+    width: 200px;
+    height: 100px;
+}
+.imageUrl{
+    width: 200px;
+    height: 100px;
+}
+
+@media (max-width: 780px) {
+    .games ul {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+ @media(max-width: 500px){
+    .games ul {
+        grid-template-columns: 1fr;
+    }
+ }
